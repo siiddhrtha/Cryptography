@@ -1,4 +1,4 @@
-a=18756
+a= 18756
 a0=(a&0xFF)
 a1=((a>>8)&0xFF)
 a2=((a>>16)&0xFF)
@@ -18,3 +18,10 @@ while(Number > 0):
     Number = Number //10   
      
 print("\n Reverse is :" ,Reverse) 
+
+def convertToBinary (n):
+    if n>1:
+        convertToBinary(n//2)
+        print(n%2,end ="")
+
+        print(convertToBinary(Reverse))

@@ -1,0 +1,11 @@
+from random import randint
+n= int(input("Enter the 1st prime no:"))
+g= int(input("Enter the 2nd prime no:"))
+a= int(input("Enter 1st private key:"))
+b= int(input("Enter 2nd private key:"))
+x = int(pow(g,a,n))
+y = int(pow(g,b,n))
+ka = int(pow(y,a,n))
+kb = int(pow(x,b,n))
+print('Secret key for the Alice is : %d'%(ka))
+print('Secret Key for the Bob is : %d'%(kb))
